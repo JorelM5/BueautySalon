@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registro de Cortes</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <h1>Registro de Cortes - Salón de Belleza</h1>
+
+  <form id="corteForm">
+    <label>Cliente: <input type="text" id="cliente" required></label>
+    <label>Empleado:
+      <select id="empleado">
+        <option>Carla López</option>
+        <option>Daniel Rivera</option>
+        <option>Fernanda Soto</option>
+        <option>Luis Montalvo</option>
+        <option>Nancy Ortega</option>
+      </select>
+    </label>
+    <label>Precio ($): <input type="number" id="precio" required></label>
+    <label>Propina ($): <input type="number" id="propina" required></label>
+    <button type="submit">Registrar Corte</button>
+  </form>
+
+  <section id="resumen">
+    <h2>Resumen del Día (<span id="fechaHoy"></span>)</h2>
+    <p>Cortes totales: <span id="totalCortes">0</span></p>
+    <p>Ingresos totales: $<span id="totalIngresos">0</span></p>
+    <p>Propinas acumuladas: $<span id="totalPropinas">0</span></p>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
