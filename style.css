@@ -1,0 +1,9 @@
+body { font-family: Arial, sans-serif; margin: .5em; }
+h1, h2 { text-align: center; }
+form { display: grid; gap: .5em; max-width: 400px; margin: 1em auto; }
+label { display: flex; justify-content: space-between; }
+button { padding: .5em; }
+#resumen { max-width: 400px; margin: 1em auto; background: #f9f9f9; padding: 1em; border-radius: 8px; }
+@media(max-width:500px){
+  form, #resumen { width: 100%; }
+}
